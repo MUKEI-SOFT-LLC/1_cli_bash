@@ -17,3 +17,11 @@ do
     mojisu=`printf $animal | wc -c`
     futuu_ni_hyoji $animal $mojisu
 done
+
+fruits=("apple" "banana" "grape" "kiwi")
+
+for fruit in ${fruits[@]}
+do
+    mojisu=`printf $fruit | wc -c`
+    futuu_ni_hyoji $fruit $mojisu
+done
