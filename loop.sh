@@ -15,7 +15,12 @@ zoo=("elephant" "gorilla" "wolf" "horse")
 for animal in ${zoo[@]}
 do
     mojisu=`printf $animal | wc -c`
-    futuu_ni_hyoji $animal $mojisu
+    if [ $mojisu -eq 5 ]
+    then
+       kiken_ni_hyoji $animal
+    else
+       futuu_ni_hyoji $animal $mojisu
+    fi    
 done
 
 fruits=("apple" "banana" "grape" "kiwi")
@@ -23,5 +28,10 @@ fruits=("apple" "banana" "grape" "kiwi")
 for fruit in ${fruits[@]}
 do
     mojisu=`printf $fruit | wc -c`
-    futuu_ni_hyoji $fruit $mojisu
+    if [ $fruit == "kiwi" ]
+    then
+       kiken_ni_hyoji $fruit
+    else
+       futuu_ni_hyoji $fruit $mojisu
+    fi    
 done
