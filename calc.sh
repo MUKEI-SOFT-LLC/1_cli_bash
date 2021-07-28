@@ -1,4 +1,4 @@
-a=1
-b=2
-answer=$(( $a + $b ))
+x=1
+y=10
+answer=$(( $x - $y ))
 echo "答えは${answer}です。"
